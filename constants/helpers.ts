@@ -25,3 +25,9 @@ export const skillsList = [
   "TailwindCSS",
   "Chakra UI",
 ];
+
+export const profileDetails = {
+  jobTitle: "Software Engineer",
+  profileSummary:
+    "Experienced Software Engineer with demonstrated success in developing robust, secure, and scalable applications. Proven ability to work in fast-paced environments, adapt to different work environments, and ensuring projects are delivered on time.",
+};
