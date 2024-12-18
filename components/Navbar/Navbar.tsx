@@ -10,17 +10,17 @@ const Navbar = () => {
       <ul className="menu menu-horizontal flex justify-evenly items-center bg-base-200 w-screen lg:static lg:w-auto lg:rounded-box">
         <li>
           <Link href="/">
-            <ImProfile size={20} />
+            <ImProfile size={30} />
           </Link>
         </li>
         <li>
           <Link href="/projects">
-            <LuFileStack size={20} />
+            <LuFileStack size={30} />
           </Link>
         </li>
         <li>
           <a>
-            <IoMdContact size={20} />
+            <IoMdContact size={30} />
           </a>
         </li>
       </ul>
