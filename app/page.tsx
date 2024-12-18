@@ -6,7 +6,7 @@ import { profileDetails } from "@/constants/helpers";
 
 export default function Home() {
   return (
-    <main className="bg-black container h-screen max-w-full snap-y lg:flex lg:items-end">
+    <main className="bg-black text-white container h-screen max-w-full snap-y lg:flex lg:items-end">
       <section className="w-full h-full flex justify-center items-center snap-start lg:pw-20">
         <Profile
           jobTitle={profileDetails.jobTitle}
