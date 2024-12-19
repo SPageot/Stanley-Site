@@ -9,8 +9,6 @@ const mainScreen =
 const rightSectionLargeScreen =
   "h-full w-full flex flex-col justify-center items-center gap-10 text-xl sm:text-3xl lg:text-5xl p-5 font-playfair absolute bg-[rgba(0,0,0,0.8)]";
 
-const leftSectionLargeScreen = "border-2 w-[50%] h-[95%]";
-
 const hoverAnimation =
   "hover:scale-110 transition-transform duration-300 ease-in-out";
 
