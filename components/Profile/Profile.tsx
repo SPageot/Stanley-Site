@@ -11,7 +11,7 @@ const Avatar: React.FC<AvatarPropTypes> = ({
   return (
     <div className="card border-2 w-96 lg:h-2/4">
       <figure>
-        <Image src={srcPhoto} alt={alt} className="rounded-full p-10 lg:p-32" />
+        <Image src={srcPhoto} alt={alt} className="rounded-full p-16 lg:p-20" />
       </figure>
       <div className="card-body bg-black rounded-2xl">
         <h1 className="card-title text-3xl underline text-white">{jobTitle}</h1>
