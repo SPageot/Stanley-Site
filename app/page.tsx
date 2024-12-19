@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-black h-full md:overflow-y-scroll lg:overflow-y-visible">
-          <h2 className="text-xl underline text-center font-extrabold sticky top-0 lg:static z-50">
+          <h2 className="text-xl underline text-center font-extrabold sticky top-0 lg:static z-20">
             History
           </h2>
           <Timeline />
