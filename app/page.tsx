@@ -7,7 +7,7 @@ const mainScreen =
   "bg-black h-screen w-screen flex justify-center items-center";
 
 const rightSectionLargeScreen =
-  "h-full w-full flex flex-col justify-center items-center gap-10 text-xl sm:text-3xl lg:text-5xl p-5 font-playfair absolute bg-[rgba(0,0,0,0.8)]";
+  "h-full w-full flex flex-col justify-center text-white items-center gap-10 text-xl sm:text-3xl lg:text-5xl p-5 font-playfair absolute bg-[rgba(0,0,0,0.8)]";
 
 const hoverAnimation =
   "hover:scale-110 transition-transform duration-300 ease-in-out";
