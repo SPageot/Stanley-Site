@@ -21,6 +21,7 @@ const Projects = () => {
           src={blackfezLogo}
           alt="Black Fez Logo"
           className="h-full w-full rounded-full"
+          priority
         />
       </Link>
     </motion.section>
