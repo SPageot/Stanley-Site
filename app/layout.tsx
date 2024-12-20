@@ -1,9 +1,8 @@
 "use client";
 
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { useCallback, useState } from "react";
-import { BiArrowToRight, BiMenu } from "react-icons/bi";
+import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
 import { motion } from "framer-motion";
 import "./globals.css";
