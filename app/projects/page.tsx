@@ -1,24 +1,29 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import blackFezLogo from "../../assets/logo.png";
 import Link from "next/link";
+import blackfezLogo from "../../public/assets/blackfezlogo.png";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <main className="bg-black container h-screen max-w-full snap-y lg:flex lg:items-end">
-      <section className="flex flex-col snap-start h-full lg:p-10 lg:py-40 justify-center items-center">
-        <Link
-          href="https://blackfezbarbershop.netlify.app/"
-          className="rounded-2xl bg-black w-60 h-60 flex items-center relative"
-        >
-          <Image
-            src={blackFezLogo}
-            alt="black fez barbershop logo"
-            className="absolute h-full rounded-2xl"
-          />
-        </Link>
-      </section>
-    </main>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 1 }}
+      className="h-full w-full flex bg-[rgba(0,0,0,0.8)] absolute z-20 p-10  "
+    >
+      <Link
+        href="https://blackfezbarbershop.netlify.app/"
+        className="bg-black w-20 h-20 md:w-60 md:h-60 flex items-center rounded-full relative"
+      >
+        <Image
+          src={blackfezLogo}
+          alt="Black Fez Logo"
+          className="h-full w-full rounded-full"
+        />
+      </Link>
+    </motion.section>
   );
 };
 
