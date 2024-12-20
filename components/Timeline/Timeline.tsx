@@ -19,7 +19,7 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 lg:w-4/5 md:text-end">
+        <div className="timeline-start mb-10 lg:w-4/5 bg-black rounded-xl p-5 md:text-end">
           <time className="font-mono italic">{jobDetails[0].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[0].company}</h2>
           <h4 className="text-md font-black">{jobDetails[0].jobTitle}</h4>
@@ -43,7 +43,7 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10 lg:w-4/5">
+        <div className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5">
           <time className="font-mono italic">{jobDetails[1].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[1].company}</h2>
           <h4 className="text-md font-black">{jobDetails[1].jobTitle}</h4>
@@ -67,7 +67,7 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 lg:w-4/5 md:text-end">
+        <div className="timeline-start mb-10  bg-black rounded-xl p-5 lg:w-4/5 md:text-end">
           <time className="font-mono italic">{jobDetails[2].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[2].company}</h2>
           <h4 className="text-md font-black">{jobDetails[2].jobTitle}</h4>
@@ -91,7 +91,7 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10 lg:w-4/5">
+        <div className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5">
           <time className="font-mono italic">{jobDetails[3].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[3].company}</h2>
           <h4 className="text-md font-black">{jobDetails[3].jobTitle}</h4>
