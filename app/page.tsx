@@ -7,12 +7,12 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 2, duration: 1 }}
-      className="flex justify-start items-center gap-2 flex-col md:flex-row md:gap-10 absolute top-0 left-0 p-2 bg-[rgba(169,149,123,0.5)]"
+      className="flex justify-start items-center gap-2 flex-col md:flex-row md:gap-10 absolute top-0 left-0 p-2 bg-[rgba(169,149,123,0.7)]"
     >
-      <h3 className="text-white text-sm md:text-3xl font-extrabold z-50">
+      <h3 className="text-white text-sm md:text-xl font-extrabold z-50">
         Stanley Pageot
       </h3>
-      <h4 className="text-white text-sm md:text-3xl font-extrabold z-50">
+      <h4 className="text-white text-sm md:text-xl font-extrabold z-50">
         Software Engineer
       </h4>
     </motion.section>
