@@ -9,6 +9,7 @@ import "./globals.css";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { usePathname } from "next/navigation";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,7 +54,7 @@ export default function RootLayout({
       name: "History",
       url: "/history",
       onMouseEnter: useCallback(
-        () => setVideoUrl("/assets/laptop.mp4"),
+        () => setVideoUrl("/assets/history.mp4"),
         [videoUrl]
       ),
     },
@@ -62,14 +63,6 @@ export default function RootLayout({
       url: "/projects",
       onMouseEnter: useCallback(
         () => setVideoUrl("/assets/projects.mp4"),
-        [videoUrl]
-      ),
-    },
-    {
-      name: "Contact",
-      url: "/contact",
-      onMouseEnter: useCallback(
-        () => setVideoUrl("/assets/email.mp4"),
         [videoUrl]
       ),
     },
@@ -150,6 +143,16 @@ export default function RootLayout({
                     {menuItem.name}
                   </Link>
                 ))}
+                <div className="absolute bottom-0 left-0 h-1/5 flex flex-col gap-2 justify-center items-center w-full">
+                  <div className="flex justify-center items-center gap-1">
+                    <Link
+                      target="_blank"
+                      href="https://www.linkedin.com/in/stanley-pageot-a365ab1a0/"
+                    >
+                      <LiaLinkedinIn size={30} />
+                    </Link>
+                  </div>
+                </div>
               </motion.section>
             )}
           </motion.div>
