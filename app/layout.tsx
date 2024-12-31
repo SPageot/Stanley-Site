@@ -76,13 +76,13 @@ export default function RootLayout({
           <motion.div
             initial={{ width: "0%" }}
             animate={{ width: "95%" }}
-            transition={{ duration: isPathHome ? 2 : 1 }}
+            transition={{ duration: isPathHome ? 1 : 0.5 }}
             className="border-2 border-white h-[95%] w-[95%] flex justify-end items-center relative"
           >
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 2, duration: 2 }}
+              transition={{ delay: 0.3, duration: 0.4 }}
               className="absolute top-0 right-0 m-5 z-50 flex items-center gap-2 "
             >
               {isFirstOpen && isPathHome && (
@@ -107,7 +107,7 @@ export default function RootLayout({
 
             <video
               key={videoUrl}
-              className="w-full h-full absolute rounded-lg object-cover"
+              className="w-full h-full absolute object-cover"
               playsInline
               autoPlay
               muted
@@ -117,7 +117,7 @@ export default function RootLayout({
               Your browser does not support the video tag.
             </video>
             {children}
-            {!isFirstOpen && (
+            {isMenuOpen && (
               <motion.section
                 initial={
                   isMenuOpen
@@ -129,7 +129,7 @@ export default function RootLayout({
                     ? { opacity: 1, width: "30%" }
                     : { opacity: 0, width: "20%" }
                 }
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.2 }}
                 className={rightSectionLargeScreen}
               >
                 {changeMenuItemVideoOnHover.map((menuItem) => (
