@@ -12,9 +12,6 @@ export default function Home() {
       <h3 className="text-white text-sm md:text-xl font-extrabold z-50">
         Stanley Pageot
       </h3>
-      <h4 className="text-white text-sm md:text-xl font-extrabold z-50">
-        Software Engineer
-      </h4>
     </motion.section>
   );
 }
