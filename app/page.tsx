@@ -6,7 +6,7 @@ export default function Home() {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 2, duration: 1 }}
+      transition={{ delay: 0.5, duration: 0.2 }}
       className="flex justify-start items-center gap-2 flex-col md:flex-row md:gap-10 absolute top-0 left-0 p-2 bg-[rgba(169,149,123,0.7)]"
     >
       <h3 className="text-white text-sm md:text-xl font-extrabold z-50">
