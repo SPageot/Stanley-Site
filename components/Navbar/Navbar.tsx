@@ -3,7 +3,7 @@ import Image from "next/image";
 import logoName from "@/public/assets/logo.png";
 import { NavLinks } from "../NavLinks/NavLinks";
 
-export const Navbar = ({ children }: { children: React.ReactNode }) => {
+export const Navbar = () => {
   return (
     <div className="drawer relative z-50 sticky top-0 left-0">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -37,7 +37,6 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
             <NavLinks />
           </div>
         </div>
-        {children}
       </div>
       <div className="drawer-side">
         <label

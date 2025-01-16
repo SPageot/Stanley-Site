@@ -64,7 +64,7 @@ export default function Home() {
         fast-paced environments, adapt to different work environments, and
         ensuring projects are delivered on time.
       </motion.section>
-      <motion.section className="flex flex-wrap gap-10 justify-evenly min-h-screen items-center my-10 sm:p-10 border-b-2">
+      <motion.section className="flex flex-wrap gap-10 justify-evenly min-h-screen items-center mt-10 sm:p-10">
         <Details
           title="Test and Debug Software"
           description="I specialize in testing and debugging software to identify and resolve issues, ensuring smooth functionality and optimal performance. My work involves writing test cases, conducting thorough analysis, and applying debugging techniques to deliver reliable, high-quality applications."
@@ -82,7 +82,7 @@ export default function Home() {
           description="I design and architect scalable, efficient systems that meet both functional and technical requirements, ensuring seamless integration and performance. By carefully selecting appropriate technologies and defining clear system structures, I create solutions that are both reliable and adaptable to future needs."
         />
       </motion.section>
-      <motion.section className="mt-10 pl-5">
+      <motion.section className="mt-10 pl-5 border-t-2">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
