@@ -8,7 +8,7 @@ const Hero: React.FC<HeroTypes> = ({
   imageSrc,
 }): React.ReactElement => {
   return (
-    <div className="hero bg-primary min-h-screen">
+    <div className="hero min-h-screen">
       <div className="hero-content flex-col gap-10 lg:flex-row">
         {imageSrc && (
           <motion.img
