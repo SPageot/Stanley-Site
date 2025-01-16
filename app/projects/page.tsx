@@ -11,7 +11,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.3, duration: 0.2 }}
-      className="h-full w-full flex bg-[rgba(0,0,0,0.8)] absolute z-20 p-10  "
+      className="min-h-screen w-screen flex bg-[rgba(0,0,0,0.8)] absolute z-20 p-10"
     >
       <Link
         href="https://blackfezbarbershop.netlify.app/"
