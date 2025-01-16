@@ -53,70 +53,36 @@ export default function Home() {
       >
         <Hero title="Stanley Pageot" subtitle="Software Engineer" />
       </motion.section>
-      <motion.section className="flex justify-center items-center p-10 h-96 border-b-4 font-extrabold md:text-4xl">
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.3 }}
+        className="font-playfair flex justify-center items-center p-10 h-96 border-b-4 font-extrabold lg:text-4xl"
+      >
         Experienced Software Engineer with demonstrated success in developing
         robust, secure, and scalable applications. Proven ability to work in
         fast-paced environments, adapt to different work environments, and
         ensuring projects are delivered on time.
       </motion.section>
-      <motion.section className="flex flex-wrap gap-10 justify-evenly h-screen items-center sm:p-10">
+      <motion.section className="flex flex-wrap gap-10 justify-evenly min-h-screen items-center my-10 sm:p-10 border-b-2">
         <Details
           title="Test and Debug Software"
-          description="Testing and debugging are critical steps in software development
-            that ensure your software functions correctly and is free of errors.
-            Testing involves running the software under various conditions to
-            verify that it meets its requirements and behaves as expected. This
-            includes checking individual components, how they interact, and how
-            the entire system performs. Debugging, on the other hand, focuses on
-            identifying and fixing issues (or 'bugs') that may arise during
-            testing. Together, these processes help improve the reliability,
-            security, and user experience of the software, ensuring it runs
-            smoothly and meets your needs before it’s released."
+          description="I specialize in testing and debugging software to identify and resolve issues, ensuring smooth functionality and optimal performance. My work involves writing test cases, conducting thorough analysis, and applying debugging techniques to deliver reliable, high-quality applications."
         />
         <Details
           title="Collaborate with Teams and Stakeholders"
-          description="Collaborating with teams and stakeholders involves working closely
-            with various groups—such as developers, designers, product managers,
-            and clients—to ensure that everyone is aligned and working towards
-            the same goals. This process includes regular communication,
-            gathering feedback, and making sure that each team understands their
-            role and responsibilities within the project. Collaboration ensures
-            that the software being developed meets both technical requirements
-            and business needs, while addressing any concerns or changes that
-            arise throughout the project. Effective collaboration helps to avoid
-            misunderstandings, improve problem-solving, and ensure the timely
-            delivery of a high-quality product."
+          description="I collaborate closely with cross-functional teams and stakeholders to understand project requirements and deliver solutions that align with business goals. Through regular communication and feedback loops, I ensure that the development process meets expectations and achieves optimal results."
         />
         <Details
           title="Write and Maintain Code"
-          description="Writing code involves developing the software's features and
-            functionalities using programming languages, ensuring it meets the
-            required specifications. Maintenance, on the other hand, is the
-            ongoing task of updating the code to fix bugs, improve performance,
-            add new features, or ensure compatibility with other systems and
-            technologies. It also includes refactoring (restructuring) the code
-            to keep it clean and efficient, ensuring that the software remains
-            reliable and adaptable over time. Together, these processes ensure
-            that the software continues to meet user needs and performs
-            optimally."
+          description="I write clean, efficient, and maintainable code to build robust software solutions while adhering to best practices and coding standards. Additionally, I regularly update and refactor existing code to enhance performance, fix bugs, and ensure long-term maintainability."
         />
         <Details
           title="Design and Architect Systems"
-          description=" Designing and architecting software systems involves planning and
-            structuring the software's overall framework to ensure it meets both
-            functional and non-functional requirements. This process includes
-            defining how different components of the system will interact,
-            selecting the right technologies, and creating an architecture that
-            is scalable, reliable, secure, and maintainable. The design phase
-            focuses on breaking down the system into manageable parts, while the
-            architecture ensures these parts work together effectively. A
-            well-designed and well-architected system provides a solid
-            foundation for development, helping to prevent future issues,
-            accommodate growth, and ensure the software can be easily updated or
-            modified as needs evolve."
+          description="I design and architect scalable, efficient systems that meet both functional and technical requirements, ensuring seamless integration and performance. By carefully selecting appropriate technologies and defining clear system structures, I create solutions that are both reliable and adaptable to future needs."
         />
       </motion.section>
-      <motion.section className="h-screen mt-10 pl-5">
+      <motion.section className="mt-10 pl-5">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -125,14 +91,14 @@ export default function Home() {
         >
           Skills
         </motion.h2>
-        <ul className="flex gap-10 w-full flex justify-center items-center flex-wrap">
+        <ul className="flex gap-10 md:w-full justify-center items-center flex-wrap">
           {skillsList.map((skill) => (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
               key={skill.id}
-              className="w-20 sm:w-32 sm:w-60"
+              className="w-20 lg:w-32 lg:w-60"
             >
               <Image
                 src={skill.image}
