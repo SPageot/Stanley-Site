@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HeroTypes } from "@/types/types";
+import Image from "next/image";
+import codingImage from "../../public/assets/codingImage.jpg";
 
 const Hero: React.FC<HeroTypes> = ({
   title,
@@ -8,7 +10,12 @@ const Hero: React.FC<HeroTypes> = ({
   imageSrc,
 }): React.ReactElement => {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero min-h-screen relative">
+      <Image
+        src={codingImage}
+        className="h-full w-full absolute left-0 top-0"
+        alt="Coding Image"
+      />
       <div className="hero-content flex-col gap-10 lg:flex-row">
         {imageSrc && (
           <motion.img
@@ -19,7 +26,7 @@ const Hero: React.FC<HeroTypes> = ({
             className="h-1/2 rounded-lg shadow-2xl"
           />
         )}
-        <div className=" flex flex-col gap-3 ">
+        <div className=" flex flex-col gap-3 glass p-10 rounded-xl">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

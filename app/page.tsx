@@ -49,10 +49,17 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.2 }}
+        className="border-b-4"
       >
         <Hero title="Stanley Pageot" subtitle="Software Engineer" />
       </motion.section>
-      <motion.section className="flex flex-wrap gap-10 justify-evenly items-center">
+      <motion.section className="flex justify-center items-center p-10 h-96 border-b-4 font-extrabold md:text-4xl">
+        Experienced Software Engineer with demonstrated success in developing
+        robust, secure, and scalable applications. Proven ability to work in
+        fast-paced environments, adapt to different work environments, and
+        ensuring projects are delivered on time.
+      </motion.section>
+      <motion.section className="flex flex-wrap gap-10 justify-evenly h-screen items-center sm:p-10">
         <Details
           title="Test and Debug Software"
           description="Testing and debugging are critical steps in software development
