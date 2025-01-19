@@ -8,8 +8,8 @@ const History = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.2 }}
-      className="flex justify-center bg-black items-center"
+      transition={{ duration: 0.2 }}
+      className="flex justify-center bg-primary items-center pt-28"
     >
       <Timeline />
     </motion.section>

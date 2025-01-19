@@ -30,7 +30,7 @@ export const NavLinks = ({ isVertical }: { isVertical?: boolean }) => {
   ) : (
     <ul className="menu bg-base-200 font-playfair min-h-full w-80 p-4 flex flex-col justify-center items-center gap-3">
       {changeMenuItemVideoOnHover.map((navLink) => (
-        <li key={navLink.id}>
+        <li className="menu-item" key={navLink.id}>
           <Link href={navLink.url}>{navLink.name}</Link>
         </li>
       ))}

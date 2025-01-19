@@ -10,8 +10,8 @@ const Projects = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.3, duration: 0.2 }}
-      className="flex bg-black p-10"
+      transition={{ duration: 0.2 }}
+      className="flex bg-primary p-10 pt-28"
     >
       <Link
         href="https://blackfezbarbershop.netlify.app/"

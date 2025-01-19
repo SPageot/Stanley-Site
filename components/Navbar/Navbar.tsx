@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import logoName from "@/public/assets/logo.png";
 import { NavLinks } from "../NavLinks/NavLinks";
 
 export const Navbar = () => {
+  useEffect(() => {
+    document.querySelectorAll(".menu-item").forEach((item) => {
+      const drawerToggle = document.getElementsByClassName("drawer-toggle")[0];
+      if (drawerToggle instanceof HTMLInputElement) {
+        item.addEventListener("click", () => {
+          drawerToggle.checked = false;
+        });
+      }
+    });
+  });
+
   return (
-    <div className="drawer relative z-50 sticky top-0 left-0">
+    <div className="drawer z-50 fixed top-0 left-0">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="navbar bg-black w-full">

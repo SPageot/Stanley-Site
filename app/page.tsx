@@ -44,11 +44,11 @@ export default function Home() {
     { id: 18, image: mongodbLogo },
   ];
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-28">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.2 }}
+        transition={{ duration: 0.2 }}
         className="border-b-4"
       >
         <Hero title="Stanley Pageot" subtitle="Software Engineer" />
@@ -65,7 +65,7 @@ export default function Home() {
           ensuring projects are delivered on time.
         </motion.p>
       </section>
-      <motion.section className="bg-primary flex flex-wrap gap-10 justify-evenly h-screen items-center p-10">
+      <motion.section className="bg-primary flex flex-wrap xl:flex-nowrap gap-10 justify-evenly items-center p-10 lg:p-base lg:py-80">
         <Details
           title="Test and Debug Software"
           description="I specialize in testing and debugging software to identify and resolve issues, ensuring smooth functionality and optimal performance. My work involves writing test cases, conducting thorough analysis, and applying debugging techniques to deliver reliable, high-quality applications."
