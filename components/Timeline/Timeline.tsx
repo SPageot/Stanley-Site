@@ -1,4 +1,5 @@
 import { jobDetails } from "@/constants/helpers";
+import { motion } from "framer-motion";
 import React from "react";
 
 const Timeline = () => {
@@ -19,12 +20,16 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10 lg:w-4/5 bg-black rounded-xl p-5 md:text-end">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="timeline-start mb-10 lg:w-4/5 bg-black rounded-xl p-5 md:text-end"
+        >
           <time className="font-mono italic">{jobDetails[0].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[0].company}</h2>
           <h4 className="text-md font-black">{jobDetails[0].jobTitle}</h4>
           <p>{jobDetails[0].jobSummary}</p>
-        </div>
+        </motion.div>
         <hr />
       </li>
       <li>
@@ -43,12 +48,17 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5"
+        >
           <time className="font-mono italic">{jobDetails[1].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[1].company}</h2>
           <h4 className="text-md font-black">{jobDetails[1].jobTitle}</h4>
           <p>{jobDetails[1].jobSummary}</p>
-        </div>
+        </motion.div>
         <hr />
       </li>
       <li>
@@ -67,12 +77,17 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-start mb-10  bg-black rounded-xl p-5 lg:w-4/5 md:text-end">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="timeline-start mb-10 lg:w-4/5 bg-black rounded-xl p-5 md:text-end"
+        >
           <time className="font-mono italic">{jobDetails[2].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[2].company}</h2>
           <h4 className="text-md font-black">{jobDetails[2].jobTitle}</h4>
           <p>{jobDetails[2].jobSummary}</p>
-        </div>
+        </motion.div>
         <hr />
       </li>
       <li>
@@ -91,12 +106,17 @@ const Timeline = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="timeline-end mb-10  bg-black rounded-xl p-5 lg:w-4/5"
+        >
           <time className="font-mono italic">{jobDetails[3].jobYear}</time>
           <h2 className="text-lg font-black">{jobDetails[3].company}</h2>
           <h4 className="text-md font-black">{jobDetails[3].jobTitle}</h4>
           <p>{jobDetails[3].jobSummary}</p>
-        </div>
+        </motion.div>
         <hr />
       </li>
     </ul>

@@ -53,18 +53,19 @@ export default function Home() {
       >
         <Hero title="Stanley Pageot" subtitle="Software Engineer" />
       </motion.section>
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        className="font-playfair flex justify-center items-center p-10 h-96 border-b-4 font-extrabold lg:text-4xl"
-      >
-        Experienced Software Engineer with demonstrated success in developing
-        robust, secure, and scalable applications. Proven ability to work in
-        fast-paced environments, adapt to different work environments, and
-        ensuring projects are delivered on time.
-      </motion.section>
-      <motion.section className="flex flex-wrap gap-10 justify-evenly min-h-screen items-center mt-10 sm:p-10">
+      <section className="font-playfair flex justify-center bg-primary items-center p-10 h-96 border-b-4 font-extrabold lg:text-4xl">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          Experienced Software Engineer with demonstrated success in developing
+          robust, secure, and scalable applications. Proven ability to work in
+          fast-paced environments, adapt to different work environments, and
+          ensuring projects are delivered on time.
+        </motion.p>
+      </section>
+      <motion.section className="bg-primary flex flex-wrap gap-10 justify-evenly h-screen items-center p-10">
         <Details
           title="Test and Debug Software"
           description="I specialize in testing and debugging software to identify and resolve issues, ensuring smooth functionality and optimal performance. My work involves writing test cases, conducting thorough analysis, and applying debugging techniques to deliver reliable, high-quality applications."
@@ -82,15 +83,7 @@ export default function Home() {
           description="I design and architect scalable, efficient systems that meet both functional and technical requirements, ensuring seamless integration and performance. By carefully selecting appropriate technologies and defining clear system structures, I create solutions that are both reliable and adaptable to future needs."
         />
       </motion.section>
-      <motion.section className="mt-10 pl-5 border-t-2">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="font-playfair lg:text-5xl sticky top-0"
-        >
-          Skills
-        </motion.h2>
+      <motion.section className="pt-10 bg-primary">
         <ul className="flex gap-10 md:w-full justify-center items-center flex-wrap">
           {skillsList.map((skill) => (
             <motion.div
