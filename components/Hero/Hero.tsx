@@ -26,7 +26,7 @@ const Hero: React.FC<HeroTypes> = ({
             className="h-1/2 rounded-lg shadow-2xl"
           />
         )}
-        <div className=" flex flex-col gap-3 glass p-10 rounded-xl">
+        <div className=" flex flex-col gap-3 glass p-10 rounded-xl text-center">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
