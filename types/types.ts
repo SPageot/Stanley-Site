@@ -6,3 +6,14 @@ export type AvatarPropTypes = {
   jobTitle: string;
   profileSummary: string;
 };
+
+export type HeroTypes = {
+  title: string;
+  subtitle: string;
+  imageSrc?: string;
+};
+
+export type ProjectType = {
+  projectImage: StaticImageData;
+  projectLink: string;
+};
