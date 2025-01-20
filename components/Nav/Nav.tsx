@@ -5,7 +5,7 @@ import Image from "next/image";
 import logoName from "@/public/assets/logo.png";
 import { NavLinks } from "../NavLinks/NavLinks";
 
-export const Navbar = () => {
+export const Nav = () => {
   useEffect(() => {
     document.querySelectorAll(".menu-item").forEach((item) => {
       const drawerToggle = document.getElementsByClassName("drawer-toggle")[0];
