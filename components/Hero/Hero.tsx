@@ -12,6 +12,7 @@ const Hero: React.FC<HeroTypes> = ({
   return (
     <div className="hero min-h-screen relative">
       <Image
+        priority
         src={codingImage}
         className="h-full w-full absolute left-0 top-0"
         alt="Coding Image"
