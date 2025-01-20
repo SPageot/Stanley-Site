@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import Image from "next/image";
 import logoName from "@/public/assets/logo.png";
@@ -16,7 +18,7 @@ export const Navbar = () => {
   });
 
   return (
-    <div className="drawer z-50 fixed top-0 left-0">
+    <nav className="drawer z-50 fixed top-0 left-0">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="navbar bg-black w-full">
@@ -57,6 +59,6 @@ export const Navbar = () => {
         ></label>
         <NavLinks isVertical />
       </div>
-    </div>
+    </nav>
   );
 };

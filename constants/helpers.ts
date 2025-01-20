@@ -1,29 +1,41 @@
+import reactLogo from "@/public/assets/react-logo.png";
+import jsLogo from "@/public/assets/js-logo.png";
+import reactNativeLogo from "@/public/assets/reactnative-logo.svg";
+import golangLogo from "@/public/assets/golang-logo.png";
+import pythonLogo from "@/public/assets/python-logo.png";
+import fastapiLogo from "@/public/assets/fastapi-logo.png";
+import flaskLogo from "@/public/assets/flask-logo.png";
+import nodejsLogo from "@/public/assets/nodejs-logo.png";
+import expressjsLogo from "@/public/assets/expressjs-logo.png";
+import nextjsLogo from "@/public/assets/nextjs-logo.png";
+import gitLogo from "@/public/assets/git-logo.png";
+import nestjsLogo from "@/public/assets/nestjs-logo.png";
+import graphqlLogo from "@/public/assets/graphql-logo.webp";
+import tailwindLogo from "@/public/assets/tailwind-logo.webp";
+import tsLogo from "@/public/assets/ts-logo.png";
+import dockerLogo from "@/public/assets/docker-logo.png";
+import mongodbLogo from "@/public/assets/mongodb-logo.png";
+import postgresqlLogo from "@/public/assets/postgresql-logo.png";
+
 export const skillsList = [
-  "NextJS",
-  "HTML",
-  "CSS",
-  "Ant Design",
-  "Styled Components",
-  "NestJS",
-  "NodeJS",
-  "Golang",
-  "Python",
-  "Flask",
-  "FastAPI",
-  "Docker",
-  "React Native",
-  "React",
-  "Redux",
-  "GraphQL",
-  "Echo",
-  "ExpressJS",
-  "TypeScript",
-  "Git/Github",
-  "Pytest",
-  "Jest",
-  "MongoDB",
-  "TailwindCSS",
-  "Chakra UI",
+  { id: 1, image: reactLogo },
+  { id: 2, image: reactNativeLogo },
+  { id: 3, image: jsLogo },
+  { id: 4, image: golangLogo },
+  { id: 5, image: pythonLogo },
+  { id: 6, image: fastapiLogo },
+  { id: 7, image: flaskLogo },
+  { id: 8, image: nodejsLogo },
+  { id: 9, image: expressjsLogo },
+  { id: 10, image: graphqlLogo },
+  { id: 11, image: nextjsLogo },
+  { id: 12, image: tsLogo },
+  { id: 13, image: tailwindLogo },
+  { id: 14, image: gitLogo },
+  { id: 15, image: dockerLogo },
+  { id: 16, image: nestjsLogo },
+  { id: 17, image: postgresqlLogo },
+  { id: 18, image: mongodbLogo },
 ];
 
 export const profileDetails = {

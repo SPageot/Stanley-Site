@@ -1,9 +1,5 @@
-"use client";
-
 import { Geist, Geist_Mono } from "next/font/google";
-import { useCallback, useState } from "react";
 import "./globals.css";
-import { usePathname } from "next/navigation";
 import { Navbar } from "@/components/NavBar/Navbar";
 
 const geistSans = Geist({

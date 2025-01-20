@@ -12,3 +12,8 @@ export type HeroTypes = {
   subtitle: string;
   imageSrc?: string;
 };
+
+export type ProjectType = {
+  projectImage: StaticImageData;
+  projectLink: string;
+};
